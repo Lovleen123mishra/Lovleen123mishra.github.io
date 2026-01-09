@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
 <style>
-        *{
+    body{
+        background:red;
+    }
+        /* *{
         scroll-behavior: smooth;
         margin: 0;
         padding: 0;
@@ -207,7 +210,7 @@
     }
     .n a:hover{
          transform: scale(1.05);
-    }
+    } */
 </style>
 </head>
 <body>
@@ -377,25 +380,27 @@
            <p><img src="./image/location.png" alt="">&nbsp;&nbsp; Dhanbad Jharkhand(India)</p>
         </div>
 <script>
-    const containerElement=document.querySelector(".container");
-    const careers=["Web Developer","Coder","Engineer"]
-    let careerIndex=0;
-    let charIndex=0;
-    updateText();
-    function updateText(){
-        charIndex++;
-        containerElement.innerHTML=`<h1> I am ${careers[careerIndex].slice(0,1)==="E" ? "an":"a"} ${careers[careerIndex].slice(0,charIndex)}</h1><br><p>I’m Lovleen, a developer who loves turning ideas into pixel-perfect, functional web projects. From clones to custom builds, I focus on clean design, good code, and continuous growth.</p>`;
-        if(charIndex===careers[careerIndex].length)
-        {
-            careerIndex++;
-            charIndex=0;
-        }
-        if(careerIndex===careers.length)
-        {
-            careerIndex=0;
-        }
-        setTimeout(updateText,300)
-    }
+    alert("working");
+    // const containerElement=document.querySelector(".container");
+    // const careers=["Web Developer","Coder","Engineer"]
+    // let careerIndex=0;
+    // let charIndex=0;
+    // updateText();
+    // function updateText(){
+    //     charIndex++;
+    //     containerElement.innerHTML=`<h1> I am ${careers[careerIndex].slice(0,1)==="E" ? "an":"a"} ${careers[careerIndex].slice(0,charIndex)}</h1><br><p>I’m Lovleen, a developer who loves turning ideas into pixel-perfect, functional web projects. From clones to custom builds, I focus on clean design, good code, and continuous growth.</p>`;
+    //     if(charIndex===careers[careerIndex].length)
+    //     {
+    //         careerIndex++;
+    //         charIndex=0;
+    //     }
+    //     if(careerIndex===careers.length)
+    //     {
+    //         careerIndex=0;
+    //     }
+    //     setTimeout(updateText,300)
+    // }
 </script>
 </body>
+
 </html>
